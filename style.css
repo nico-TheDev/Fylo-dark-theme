@@ -133,3 +133,42 @@ h1,h2,h3{
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(255,255,255,0.2);
 }
+
+/* MAIN */
+
+.main-section{
+    padding-top: 15rem;
+    background-color: var(--main);
+}
+
+/* SECTION FEATURES */
+
+.features{
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 40px 20px;
+    justify-items: center;
+    text-align: center;
+    color: white;
+}
+
+.feature{
+    display: grid;
+    justify-items: center;
+    grid-gap: 15px;
+}
+
+.feature-title{
+    font-size: 2rem;
+}
+
+.feature-desc{
+    width: 70%;
+    font-size: 1.3rem;
+}
+
+/* SECTION */
+
