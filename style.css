@@ -256,4 +256,63 @@ section{
 .arrow{
     margin-left: 3px;
     margin-top: 5px;
+
+}
+
+/* TESTIMONIALS */
+
+.testimonial-container{
+    width: 90%;
+    margin: auto;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 20px;
+}
+
+.testimonial-container::before{
+    content: url(./images/bg-quotes.png);
+    position: absolute;
+    top: -40px;
+    left: -10px;
+}
+
+.testimony-card{
+    padding: 2rem;
+    background-color: var(--testimonials);
+    border-radius: 10px;
+    color:white;
+    z-index: 1;
+    
+    transition: all 300ms ease;
+}
+
+.testimony-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.testimony-text{
+    font-size: 1.5rem;
+
+}
+
+.name-and-position{
+    margin-left: 1rem;
+}
+
+.profile{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.icon-profile{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profile span{
+    display: block;
 }
