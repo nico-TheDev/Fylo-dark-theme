@@ -19,6 +19,10 @@
 *::before,
 *::after{
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 html{
@@ -44,8 +48,88 @@ h1,h2,h3{
 /* LANDING PAGE */
 
 .header{
-    height: 100vh;
-    background: var(--main);
+    background-color: var(--email-sign-up);
+    position: relative;
+    padding: 20px 0;
 }
 
+/* NAVIGATION */
+.nav-bar{
+    width: 90%;
+    height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.nav-logo{
+    width: 150px;
+}
+
+.links-container li{
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.nav-links{
+    color: white;
+    font-size: 2rem;
+}
+
+.nav-links:hover{
+    color: var(--cta_cyan);
+}
+
+/* HERO */
+.hero{
+    width: 60%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title{
+    font-size: 3rem;
+    color: white;
+}
+
+.heading-title{
+    text-align: center;
+    margin: 2rem 0;
+    flex: 0 1 500px;
+}
+
+.support-text{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    flex: 100%;
+}
+
+/* BUTTONS */
+
+.btn:link,
+.btn:visited{
+    text-align: center;
+    color: white;
+    background: linear-gradient(to left,var(--cta_cyan),var(--cta_blue));
+    font-size: 1.5rem;
+    padding: 15px 70px;
+    border-radius: 30px;
+    margin: 2rem;
+
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(255,255,255,0.2);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(255,255,255,0.2);
+}
