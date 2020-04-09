@@ -33,6 +33,7 @@ html{
 
 body{
     font-family:"Open Sans",sans-serif;
+
 }
 
 h1,h2,h3{
@@ -50,7 +51,15 @@ h1,h2,h3{
 .header{
     background-color: var(--email-sign-up);
     position: relative;
-    padding: 20px 0;
+    padding: 20px;
+}
+
+.header::after{
+    content:url(./images/bg-curvy-desktop.svg);
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
 }
 
 /* NAVIGATION */
@@ -89,6 +98,13 @@ h1,h2,h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.title,
+.heading-title,
+.support-text,
+.file-illustration,.btn{
+    z-index: 3;
 }
 
 .title{
@@ -137,16 +153,24 @@ h1,h2,h3{
 /* MAIN */
 
 .main-section{
-    padding-top: 15rem;
-    background-color: var(--main);
+    position: relative;
 }
+
 
 /* SECTION FEATURES */
 
+
 .features{
-    width: 60%;
+    background-color: var(--main);
+    width: 100%;
     margin: 0 auto;
     padding: 2rem;
+    padding-top: 10rem;
+}
+
+.feature-container{
+    width: 60%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap: 40px 20px;
@@ -155,10 +179,12 @@ h1,h2,h3{
     color: white;
 }
 
+
 .feature{
     display: grid;
     justify-items: center;
     grid-gap: 15px;
+    z-index: 3;
 }
 
 .feature-title{
