@@ -1,0 +1,46 @@
+/* COLORS */
+
+:root{
+    
+    --neutral_white: hsl(0, 0%, 100%) ;
+
+    --email-sign-up:hsl(217,28%,15%);
+    --main:hsl(218, 28%, 13%);
+    --footer:hsl(216, 53%, 9%);
+    --testimonials:hsl(219, 30%, 18%);
+
+    --cta_cyan:hsl(176, 68%, 64%);
+    --cta_blue:hsl(198,60%,50%);
+}
+
+/* GENERAL SETUP */
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body{
+    font-family:"Open Sans",sans-serif;
+}
+
+h1,h2,h3{
+    font-family: "Raleway",sans-serif;
+}
+
+/* FOOTER NOTE */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
