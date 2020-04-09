@@ -33,6 +33,7 @@ html{
 
 body{
     font-family:"Open Sans",sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -52,13 +53,15 @@ h1,h2,h3{
     background-color: var(--email-sign-up);
     position: relative;
     padding: 20px;
+    padding-bottom: 100px;
 }
 
 .header::after{
     content:url(./images/bg-curvy-desktop.svg);
     width: 100%;
+    height:auto;
     position: absolute;
-    bottom: -10px;
+    bottom: -30px;
     left: 0;
 }
 
@@ -92,10 +95,11 @@ h1,h2,h3{
 
 /* HERO */
 .hero{
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -105,6 +109,10 @@ h1,h2,h3{
 .support-text,
 .file-illustration,.btn{
     z-index: 3;
+}
+
+.file-illustration{
+  display: block;
 }
 
 .title{
@@ -156,6 +164,10 @@ h1,h2,h3{
     position: relative;
 }
 
+section{
+    padding: 10rem 0;
+    background-color: var(--main);
+}
 
 /* SECTION FEATURES */
 
@@ -165,7 +177,7 @@ h1,h2,h3{
     width: 100%;
     margin: 0 auto;
     padding: 2rem;
-    padding-top: 10rem;
+    margin-top: 2rem;
 }
 
 .feature-container{
@@ -198,3 +210,50 @@ h1,h2,h3{
 
 /* SECTION */
 
+.card{
+    background-color: var(--main);
+}
+
+.card-container{
+    width: 90%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-column-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.card-illustration{
+    width: 95%;
+}
+
+.textblock span{
+    display:block;
+}
+
+.textblock h2{
+    margin-bottom: 10px;
+}
+
+.textblock .support-text{
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.special-link{
+    width: 160px;
+    color:var(--cta_cyan);
+    font-size: 1.5rem;
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid var(--cta_cyan);
+    padding-bottom: 5px;
+}
+
+.arrow{
+    margin-left: 3px;
+    margin-top: 5px;
+}
