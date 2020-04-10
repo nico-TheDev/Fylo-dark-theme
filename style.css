@@ -498,3 +498,8 @@ section{
 .footer-links:hover{
     color: var(--cta_cyan);
 }
+
+.sign{
+    background-color: var(--footer);
+    color: white;
+}
