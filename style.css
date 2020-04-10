@@ -33,7 +33,7 @@ html{
 
 body{
     font-family:"Open Sans",sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     min-width: 360px;
     max-width: 1440px;
 
@@ -58,13 +58,16 @@ h1,h2,h3{
     padding-bottom: 100px;
 }
 
-.header::after{
+.main-section::before{
     content:url(./images/bg-curvy-desktop.svg);
     width: 100%;
     height:auto;
+    background-color: var(--email-sign-up);
+    clip-path: polygon(0 0,100% 0,100% 98%,0 98%);
     position: absolute;
-    bottom: -30px;
-    left: 0;
+    top:0;
+    transform: translateY(-60%);
+    overflow: hidden;
 }
 
 /* NAVIGATION */
@@ -179,7 +182,6 @@ section{
     width: 100%;
     margin: 0 auto;
     padding: 2rem;
-    margin-top: 2rem;
 }
 
 .feature-container{
@@ -324,7 +326,7 @@ section{
     width: 100%;
     display:grid;
     grid-template-columns: 20% 1fr 20%;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 1fr 1fr;
     padding-bottom: 0;
 
 }
@@ -348,16 +350,25 @@ section{
 }
 
 .input-container{
+    width: 80%;
+    margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 [type="email"]{
-    flex:2 1 40%;
+    flex:3 1 60%;
     font-size: 1.5rem;
     padding:1.5rem;
     border: none;
     border-radius: 20px;
+}
+
+.input-container .email-btn{
+    width: 100%;
+    padding: 1.5rem;
+    flex: 1 1 40%;
 }
 
 .color-change1{
@@ -398,7 +409,7 @@ section{
 .text-items{
     width: 100%;
     display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
     grid-gap:20px;
 }
 
