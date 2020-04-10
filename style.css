@@ -63,10 +63,12 @@ h1,h2,h3{
     width: 100%;
     height:auto;
     background-color: var(--email-sign-up);
-    clip-path: polygon(0 0,100% 0,100% 98%,0 98%);
+    -webkit-clip-path: polygon(0 0,100% 0,100% 98%,0 98%);
+            clip-path: polygon(0 0,100% 0,100% 98%,0 98%);
     position: absolute;
     top:0;
-    transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
     overflow: hidden;
 }
 
@@ -75,9 +77,12 @@ h1,h2,h3{
     width: 90%;
     height: 10vh;
     margin: 0 auto;
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 .nav-logo{
@@ -103,8 +108,11 @@ h1,h2,h3{
     width: 90%;
     margin: 0 auto;
 
+    display: -webkit-box;
+
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -128,14 +136,16 @@ h1,h2,h3{
 .heading-title{
     text-align: center;
     margin: 2rem 0;
-    flex: 0 1 500px;
+    -webkit-box-flex: 0;
+            flex: 0 1 500px;
 }
 
 .support-text{
     color: white;
     font-size: 1.5rem;
     text-align: center;
-    flex: 100%;
+    -webkit-box-flex: 100%;
+            flex: 100%;
 }
 
 /* BUTTONS */
@@ -144,22 +154,27 @@ h1,h2,h3{
 .btn:visited{
     text-align: center;
     color: white;
+    background: -webkit-gradient(linear,right top, left top,from(var(--cta_cyan)),to(var(--cta_blue)));
     background: linear-gradient(to left,var(--cta_cyan),var(--cta_blue));
     font-size: 1.5rem;
     padding: 15px 70px;
     border-radius: 30px;
     margin: 2rem;
 
+    -webkit-transition: all 0.3s ease-in;
+
     transition: all 0.3s ease-in;
 }
 
 .btn:hover{
-    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
     box-shadow: 0 10px 15px rgba(255,255,255,0.2);
 }
 
 .btn:active{
-    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(255,255,255,0.2);
 }
 
@@ -226,7 +241,8 @@ section{
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     grid-column-gap: 20px;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 
@@ -251,8 +267,10 @@ section{
     width: 160px;
     color:var(--cta_cyan);
     font-size: 1.5rem;
+    display:-webkit-box;
     display:flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     border-bottom: 1px solid var(--cta_cyan);
     padding-bottom: 5px;
 }
@@ -289,11 +307,14 @@ section{
     color:white;
     z-index: 1;
     
+    -webkit-transition: all 300ms ease;
+    
     transition: all 300ms ease;
 }
 
 .testimony-card:hover{
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
     box-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
 
@@ -308,8 +329,10 @@ section{
 
 .profile{
     margin-top: 2.5rem;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 .icon-profile{
@@ -352,13 +375,17 @@ section{
 .input-container{
     width: 80%;
     margin: auto;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 
 [type="email"]{
-    flex:3 1 60%;
+    -webkit-box-flex:3;
+            flex:3 1 60%;
     font-size: 1.5rem;
     padding:1.5rem;
     border: none;
@@ -368,7 +395,8 @@ section{
 .input-container .email-btn{
     width: 100%;
     padding: 1.5rem;
-    flex: 1 1 40%;
+    -webkit-box-flex: 1;
+            flex: 1 1 40%;
 }
 
 .color-change1{
@@ -414,8 +442,10 @@ section{
 }
 
 .icon-address{
+    display: -webkit-box;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+            align-items: flex-start;
 }
 
 .icon-address p{
@@ -432,16 +462,21 @@ section{
 }
 
 .with-icon{
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 .with-icon span{font-size: 1.5rem;margin-left: 10px;}
 
 .social-icons{
+    display: -webkit-box;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .social-links{
